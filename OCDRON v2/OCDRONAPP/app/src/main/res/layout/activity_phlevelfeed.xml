@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ph_level_live_feed_bg"
+    tools:context=".phFeed">
+
+    <ImageButton
+        android:id="@+id/imgbtn_PhConnect"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="TODO"
+        android:onClick="connect"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/connect"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_PhDisconnect"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="TODO"
+        android:onClick="disconnectBT"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/disconnect"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txt_PhLevel"
+        android:layout_width="188dp"
+        android:layout_height="99dp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="#1f628e"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_Return"
+        android:layout_width="129dp"
+        android:layout_height="83dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="returnHome"
+        android:scaleType="fitCenter"
+        android:src="@drawable/return_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_SavePh"
+        android:layout_width="149dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="save"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        app:srcCompat="@drawable/save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
